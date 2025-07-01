@@ -114,7 +114,7 @@ ltp:
   home: https://linux-test-project.github.io
 nfs_connectathon:
   title: NFS Connectathon test suite
-  home: http://wiki.linux-nfs.org/wiki/index.php/Connectathon_test_suite
+  home: http://linux-nfs.org/wiki/index.php/Connectathon_test_suite
 perftool:
   title: Perf tool test suite
   home: https://github.com/rfmvh/perftool-testsuite.git
