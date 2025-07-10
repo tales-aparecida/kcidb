@@ -29,6 +29,7 @@ jobs:
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
+          cache: 'pip'
           python-version: ${{ matrix.python-version }}
       - name: Check setup.py and requirements.txt are consistent
         run: |
@@ -67,6 +68,7 @@ jobs:
             pytest --tb=native --durations=0 --durations-min=1
         env:
           KCIDB_HOOKS: "pre-commit"
+          PYTHONWARNINGS: "ignore:pkg_resources is deprecated:UserWarning"
 
   check_auxiliary_files:
 
